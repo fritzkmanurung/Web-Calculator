@@ -6,10 +6,10 @@
   
   <p>
     <img src="https://img.shields.io/badge/Version-1.0.0-blue" alt="Version">
-    <img src="https://img.shields.io/github/license/fritzkmanurung/advanced-scientific-calculator" alt="License">
-    <img src="https://img.shields.io/github/repo-size/fritzkmanurung/advanced-scientific-calculator" alt="Repo Size">
-    <img src="https://img.shields.io/github/last-commit/fritzkmanurung/advanced-scientific-calculator" alt="Last Commit">
-    <a href="https://github.com/fritzkmanurung/advanced-scientific-calculator/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"></a>
+    <img src="https://img.shields.io/github/license/fritzkmanurung/Web-Calculator" alt="License">
+    <img src="https://img.shields.io/github/repo-size/fritzkmanurung/Web-Calculator" alt="Repo Size">
+    <img src="https://img.shields.io/github/last-commit/fritzkmanurung/Web-Calculator" alt="Last Commit">
+    <a href="https://github.com/fritzkmanurung/Web-Calculator/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"></a>
   </p>
 </div>
 

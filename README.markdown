@@ -81,7 +81,7 @@ Follow these simple steps to get a local copy up and running.
     cd advanced-scientific-calculator
     ```
 3.  **Open in your browser:**
-    Simply double-click the `calculator.html` file to open it.
+    Simply double-click the `index.html` file to open it.
 
 ## 🛠️ Usage
 

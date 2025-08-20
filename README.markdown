@@ -1,3 +1,4 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/33545b31-4278-40c3-a8d4-b30b14515a5b/deploy-status)](https://app.netlify.com/projects/modernwebcalculator/deploys)
 <div align="center">
   <img src="https://raw.githubusercontent.com/fritzkmanurung/advanced-scientific-calculator/main/assets/logo.png" alt="Calculator Logo" width="120">
   <h1>Advanced Scientific Calculator</h1>
@@ -27,7 +28,7 @@
 Experience the calculator live in your browser!
 
 <p align="center">
-  <a href="https://fritzkmanurung.github.io/advanced-scientific-calculator/">
+  <a href="https://modernwebcalculator.netlify.app/">
     <img src="https://img.shields.io/badge/Launch-Live_Demo-purple?style=for-the-badge&logo=rocket" alt="Live Demo">
   </a>
 </p>

@@ -1,142 +1,149 @@
-# Advanced Scientific Calculator
+<div align="center">
+  <img src="https://raw.githubusercontent.com/fritzkmanurung/advanced-scientific-calculator/main/assets/logo.png" alt="Calculator Logo" width="120">
+  <h1>Advanced Scientific Calculator</h1>
+  <p>A sleek, modern, and feature-rich scientific calculator built with pure HTML, CSS, and JavaScript.</p>
+  
+  <p>
+    <img src="https://img.shields.io/badge/Version-1.0.0-blue" alt="Version">
+    <img src="https://img.shields.io/github/license/fritzkmanurung/advanced-scientific-calculator" alt="License">
+    <img src="https://img.shields.io/github/repo-size/fritzkmanurung/advanced-scientific-calculator" alt="Repo Size">
+    <img src="https://img.shields.io/github/last-commit/fritzkmanurung/advanced-scientific-calculator" alt="Last Commit">
+    <a href="https://github.com/fritzkmanurung/advanced-scientific-calculator/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"></a>
+  </p>
+</div>
 
-![Version](https://img.shields.io/badge/Version-1.0.0-blue)  
-A sleek, modern, and feature-rich scientific calculator built with **HTML**, **CSS**, and **JavaScript**. Experience a visually stunning interface with animated effects, scientific functions, memory operations, and responsive design, perfect for both basic and advanced calculations.
+<p align="center">
+  <a href="#-live-demo--preview"><strong>Live Demo</strong></a> ·
+  <a href="#-features"><strong>Features</strong></a> ·
+  <a href="#-getting-started"><strong>Getting Started</strong></a> ·
+  <a href="#-usage"><strong>Usage</strong></a> ·
+  <a href="#-contributing"><strong>Contributing</strong></a>
+</p>
 
 ---
+
+## ✨ Live Demo & Preview
+
+Experience the calculator live in your browser!
+
+<p align="center">
+  <a href="https://fritzkmanurung.github.io/advanced-scientific-calculator/">
+    <img src="https://img.shields.io/badge/Launch-Live_Demo-purple?style=for-the-badge&logo=rocket" alt="Live Demo">
+  </a>
+</p>
+
+<table>
+  <tr>
+    <td align="center"><strong>Basic Mode</strong></td>
+    <td align="center"><strong>Scientific Mode</strong></td>
+  </tr>
+  <tr>
+    <td><img src="assets/basic-mode.png" alt="Calculator in Basic Mode"></td>
+    <td><img src="assets/scientific-mode.png" alt="Calculator in Scientific Mode"></td>
+  </tr>
+</table>
 
 ## 🌟 Features
 
-- **Dual Modes**: Switch between **Basic** and **Scientific** modes for simple arithmetic or advanced mathematical operations.
-- **Scientific Functions**: Includes trigonometric functions (`sin`, `cos`, `tan`, and inverses), logarithms (`log`, `ln`), square roots, factorials, and more.
-- **Memory Operations**: Store, recall, add, subtract, and clear memory with dedicated buttons (`MS`, `MR`, `M+`, `M-`, `MC`).
-- **Responsive Design**: Adapts seamlessly to mobile, tablet, and desktop screens.
-- **Interactive UI**: Smooth animations, glowing effects, and a dynamic particle system for an engaging user experience.
-- **Keyboard Support**: Perform calculations using your keyboard for faster input.
-- **Error Handling**: Graceful error messages with shake animation for invalid inputs.
-- **Customizable Angle Mode**: Toggle between degrees and radians for trigonometric calculations.
-
----
-
-## 🎨 Screenshots
-
-![Calculator in Basic Mode](https://via.placeholder.com/600x400.png?text=Basic+Mode)  
-![Calculator in Scientific Mode](https://via.placeholder.com/600x400.png?text=Scientific+Mode)
-
-> **Note**: Replace placeholder links above with actual screenshots of your calculator for better visuals!
-
----
-
-## 🚀 Getting Started
-
-### Prerequisites
-- A modern web browser (Chrome, Firefox, Safari, Edge, etc.)
-- No additional dependencies required!
-
-### Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/advanced-scientific-calculator.git
-   ```
-2. Navigate to the project directory:
-   ```bash
-   cd advanced-scientific-calculator
-   ```
-3. Open `index.html` in your browser:
-   - Double-click `index.html`, or
-   - Use a local server (e.g., `npx http-server` or VS Code's Live Server extension).
-
----
-
-## 🛠️ Usage
-
-### Basic Mode
-- Perform standard arithmetic operations (`+`, `-`, `×`, `÷`).
-- Use `AC` to reset, `CE` to clear the current entry, and `⌫` for backspace.
-- Toggle the sign with `±`.
-
-### Scientific Mode
-- Access advanced functions like `sin`, `cos`, `tan`, `log`, `ln`, `√`, `x^y`, `x!`, and constants (`π`, `e`).
-- Switch between degrees and radians (via code modification; see `angleMode` in script).
-
-### Memory Functions
-- Store values with `MS`, recall with `MR`, add/subtract with `M+`/`M-`, and clear with `MC`.
-- A green `M` indicator shows active memory.
-
-### Keyboard Shortcuts
-- Numbers (`0-9`), operators (`+`, `-`, `*`, `/`), decimal (`.`), `Enter`/`=` for calculation.
-- `Escape` for `AC`, `Backspace` for delete, `c`/`C` for `CE`.
-
----
+-   **Dual Modes**: Switch between **Basic** and **Scientific** modes for any calculation need.
+-   **Rich Function Library**: Includes trigonometric functions (`sin`, `cos`, `tan`, inverses), logarithms (`log`, `ln`), powers, roots, factorials, and constants (`π`, `e`).
+-   **Memory Operations**: Full memory support with `MS`, `MR`, `M+`, `M-`, and `MC`.
+-   **Interactive UI**: A visually stunning interface with smooth animations, glowing effects, and a dynamic particle background.
+-   **Responsive Design**: A flawless experience on desktops, tablets, and mobile devices.
+-   **Keyboard Support**: Use your physical keyboard for faster and more efficient calculations.
+-   **Smart Error Handling**: Graceful error messages with a shake animation for invalid inputs.
+-   **Angle Mode Toggle**: Easily switch between **Degrees** and **Radians** for trigonometric functions.
 
 ## 💻 Technologies Used
 
-- **HTML5**: Structure and layout.
-- **CSS3**: Styling, animations, and responsive design with gradients, blur effects, and particle animations.
-- **JavaScript**: Core logic, calculations, and dynamic interactions.
-- **No External Libraries**: Pure vanilla JavaScript for lightweight performance.
+This project is built with modern web technologies and has zero external dependencies, making it lightweight and fast.
 
----
+| HTML5 | CSS3 | JavaScript |
+| :---: | :--: | :----------: |
+| <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5"> | <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3"> | <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript"> |
+| Structure & Layout | Styling & Animations | Core Logic & Interactivity |
 
-## 🎥 Demo
+## 🚀 Getting Started
 
-Check out a live demo [here](https://your-username.github.io/advanced-scientific-calculator/)!  
-> **Note**: Host your project on GitHub Pages and update the link above.
+Follow these simple steps to get a local copy up and running.
 
----
+### Prerequisites
+-   A modern web browser (e.g., Chrome, Firefox, Safari).
 
-## 🤝 Contributing
+### Installation
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/fritzkmanurung/Web-Calculator.git](https://github.com/fritzkmanurung/Web-Calculator.git)
+    ```
+2.  **Navigate to the project directory:**
+    ```bash
+    cd advanced-scientific-calculator
+    ```
+3.  **Open in your browser:**
+    Simply double-click the `calculator.html` file to open it.
 
-Contributions are welcome! Follow these steps:
+## 🛠️ Usage
 
-1. Fork the repository.
-2. Create a new branch:
-   ```bash
-   git checkout -b feature/YourFeature
-   ```
-3. Commit your changes:
-   ```bash
-   git commit -m 'Add YourFeature'
-   ```
-4. Push to the branch:
-   ```bash
-   git push origin feature/YourFeature
-   ```
-5. Open a Pull Request.
+The calculator is designed to be intuitive and easy to use.
 
-Please ensure your code follows the existing style and includes relevant comments.
-
----
+-   **Basic Mode**: For standard arithmetic operations (`+`, `-`, `×`, `÷`).
+-   **Scientific Mode**: Access advanced functions, constants, and angle mode switching.
+-   **Memory Functions**: The `M` indicator lights up when a value is stored in memory.
+<details>
+  <summary><strong>View All Keyboard Shortcuts</strong></summary>
+  
+  | Key(s) | Function |
+  | :--- | :--- |
+  | `0-9` | Input numbers |
+  | `+`, `-`, `*`, `/` | Operators |
+  | `.` | Decimal point |
+  | `Enter` or `=`| Calculate result |
+  | `Escape` | Clear All (AC) |
+  | `Backspace` | Delete last character |
+  | `c` or `C` | Clear Entry (CE) |
+  
+</details>
 
 ## 📝 Roadmap
 
-- [ ] Add graphing capabilities for functions.
-- [ ] Implement unit conversions (e.g., length, weight).
-- [ ] Introduce a dark/light theme toggle.
-- [ ] Add history log for previous calculations.
-- [ ] Support for complex numbers.
+We have exciting plans for future updates! Here’s what’s on the horizon:
+-   [ ] Graphing capabilities for functions.
+-   [ ] Unit conversion module (length, weight, temperature).
+-   [ ] User-selectable themes (Dark/Light mode).
+-   [ ] Calculation history log.
+-   [ ] Support for complex numbers.
 
-Suggestions? Open an issue to discuss!
+Have an idea? Feel free to [open an issue](https://github.com/fritzkmanurung/Web-Calculator/issues) to discuss it!
 
----
+## 🤝 Contributing
+
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1.  Fork the Project
+2.  Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3.  Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4.  Push to the Branch (`git push origin feature/AmazingFeature`)
+5.  Open a Pull Request
+
+Please ensure your code is well-commented and adheres to the project's style.
 
 ## 📜 License
 
-This project is licensed under the [MIT License](LICENSE). Feel free to use, modify, and distribute!
-
----
+Distributed under the MIT License. See `LICENSE` for more information.
 
 ## 🙌 Acknowledgments
 
-- Inspired by modern calculator designs and scientific tools.
-- Thanks to the open-source community for resources and inspiration.
-
----
+-   Inspired by modern calculator designs and scientific tools.
+-   A huge thank you to the open-source community for invaluable resources.
 
 ## 📬 Contact
 
-Have questions or feedback? Reach out!  
-- GitHub: [your-username](https://github.com/your-username)  
-- Email: your.email@example.com
+Fritz Kevin Manurung - manurungfk@gmail.com
 
-⭐ **Star this repository if you find it useful!** ⭐
+Project Link: [https://github.com/fritzkmanurung/Web-Calculator.git](https://github.com/fritzkmanurung/Web-Calculator.git)
+
+---
+
+<p align="center">
+⭐ Don't forget to give it a Star if you find this repository useful! ⭐
+</p>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Scientific Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="particles" id="particles"></div>
+
+    <div class="calculator" id="calculator">
+        <div class="memory-indicator" id="memoryIndicator">M</div>
+
+        <div class="mode-toggle">
+            <button class="mode-btn active" onclick="setMode('basic')">Basic</button>
+            <button class="mode-btn" onclick="setMode('scientific')">Scientific</button>
+        </div>
+
+        <div class="display-container">
+            <div class="history" id="history"></div>
+            <div class="display" id="display">0</div>
+        </div>
+
+        <div class="buttons">
+            <button class="scientific-buttons function" onclick="scientificFunction('sin')">sin</button>
+            <button class="scientific-buttons function" onclick="scientificFunction('cos')">cos</button>
+            <button class="scientific-buttons function" onclick="scientificFunction('tan')">tan</button>
+            <button class="scientific-buttons function" onclick="scientificFunction('log')">log</button>
+            <button class="scientific-buttons function" onclick="scientificFunction('ln')">ln</button>
+
+            <button class="scientific-buttons function" onclick="scientificFunction('asin')">sin⁻¹</button>
+            <button class="scientific-buttons function" onclick="scientificFunction('acos')">cos⁻¹</button>
+            <button class="scientific-buttons function" onclick="scientificFunction('atan')">tan⁻¹</button>
+            <button class="scientific-buttons function" onclick="appendToDisplay('Math.PI')">π</button>
+            <button class="scientific-buttons function" onclick="appendToDisplay('Math.E')">e</button>
+
+            <button class="scientific-buttons function" onclick="scientificFunction('sqrt')">√</button>
+            <button class="scientific-buttons function" onclick="appendToDisplay('^')">x^y</button>
+            <button class="scientific-buttons function" onclick="appendToDisplay('^2')">x²</button>
+            <button class="scientific-buttons function" onclick="scientificFunction('factorial')">x!</button>
+            <button class="scientific-buttons function" onclick="appendToDisplay('1/')">1/x</button>
+
+            <button class="scientific-buttons function" onclick="memoryStore()">MS</button>
+            <button class="scientific-buttons function" onclick="memoryRecall()">MR</button>
+            <button class="scientific-buttons function" onclick="memoryClear()">MC</button>
+            <button class="scientific-buttons function" onclick="memoryAdd()">M+</button>
+            <button class="scientific-buttons function" onclick="memorySubtract()">M-</button>
+
+            <button class="clear" onclick="clearAll()">AC</button>
+            <button class="clear" onclick="clearEntry()">CE</button>
+            <button onclick="backspace()">⌫</button>
+            <button class="operator" onclick="appendToDisplay('/')">÷</button>
+
+            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="appendToDisplay('9')">9</button>
+            <button class="operator" onclick="appendToDisplay('*')">×</button>
+
+            <button onclick="appendToDisplay('4')">4</button>
+            <button onclick="appendToDisplay('5')">5</button>
+            <button onclick="appendToDisplay('6')">6</button>
+            <button class="operator" onclick="appendToDisplay('-')">-</button>
+
+            <button onclick="appendToDisplay('1')">1</button>
+            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="appendToDisplay('3')">3</button>
+            <button class="operator" onclick="appendToDisplay('+')">+</button>
+
+            <button onclick="toggleSign()">±</button>
+            <button onclick="appendToDisplay('0')">0</button>
+            <button onclick="appendToDisplay('.')">.</button>
+            <button class="equals" onclick="calculate()" id="equalsBtn">=</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

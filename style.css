@@ -1,0 +1,333 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    overflow-x: auto;
+    position: relative;
+}
+
+/* Animated background particles */
+.particles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.particle {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px) rotate(0deg); opacity: 0.7; }
+    50% { transform: translateY(-20px) rotate(180deg); opacity: 1; }
+}
+
+.calculator {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 25px;
+    border-radius: 25px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 
+                 0 0 100px rgba(255, 255, 255, 0.1);
+    width: 100%;
+    max-width: 450px;
+    animation: slideUp 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    position: relative;
+    z-index: 1;
+}
+
+.calculator::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4);
+    border-radius: 27px;
+    z-index: -1;
+    animation: rotate 4s linear infinite;
+    opacity: 0.7;
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.mode-toggle {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.mode-btn {
+    padding: 8px 16px;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border-radius: 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 12px;
+    backdrop-filter: blur(10px);
+}
+
+.mode-btn.active {
+    background: rgba(255, 255, 255, 0.4);
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+}
+
+.display-container {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    min-height: 100px;
+}
+
+.history {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    text-align: right;
+    margin-bottom: 10px;
+    height: 20px;
+    overflow: hidden;
+}
+
+.display {
+    color: white;
+    font-size: 32px;
+    text-align: right;
+    font-weight: 300;
+    overflow: hidden;
+    word-break: break-all;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from { text-shadow: 0 0 10px rgba(255, 255, 255, 0.5); }
+    to { text-shadow: 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.4); }
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+}
+
+.basic-mode .buttons {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+button {
+    padding: 18px 8px;
+    border: none;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+}
+
+button:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+button:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    background: rgba(255, 255, 255, 0.25);
+}
+
+button:active {
+    transform: translateY(0) scale(0.98);
+}
+
+.operator {
+    background: linear-gradient(135deg, #ff6b6b, #ee5a52);
+    color: white;
+    font-weight: 600;
+}
+
+.operator:hover {
+    background: linear-gradient(135deg, #ff5252, #e53935);
+}
+
+.equals {
+    background: linear-gradient(135deg, #4caf50, #45a049);
+    color: white;
+    font-weight: 600;
+}
+
+.equals:hover {
+    background: linear-gradient(135deg, #45a049, #388e3c);
+}
+
+.clear {
+    background: linear-gradient(135deg, #f44336, #d32f2f);
+    color: white;
+    font-weight: 600;
+}
+
+.clear:hover {
+    background: linear-gradient(135deg, #d32f2f, #c62828);
+}
+
+.function {
+    background: linear-gradient(135deg, #9c27b0, #7b1fa2);
+    color: white;
+    font-size: 14px;
+}
+
+.function:hover {
+    background: linear-gradient(135deg, #8e24aa, #6a1b9a);
+}
+
+.scientific-buttons {
+    display: none;
+}
+
+.scientific-mode .scientific-buttons {
+    display: contents;
+}
+
+.basic-mode .scientific-buttons {
+    display: none;
+}
+
+/* Memory indicators */
+.memory-indicator {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    color: #4caf50;
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.memory-indicator.active {
+    opacity: 1;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .calculator {
+        max-width: 380px;
+        padding: 20px;
+    }
+
+    .display {
+        font-size: 28px;
+    }
+
+    button {
+        padding: 15px 6px;
+        font-size: 14px;
+    }
+
+    .function {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .calculator {
+        max-width: 320px;
+        padding: 15px;
+    }
+
+    .display {
+        font-size: 24px;
+    }
+
+    button {
+        padding: 12px 4px;
+        font-size: 13px;
+    }
+
+    .function {
+        font-size: 10px;
+    }
+
+    .buttons {
+        gap: 8px;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px) scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Error animation */
+.error {
+    animation: shake 0.5s ease-in-out;
+    color: #ff6b6b !important;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+}
+
+/* Success animation */
+.success {
+    animation: pulse 0.5s ease-in-out;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}

@@ -1,6 +1,6 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/33545b31-4278-40c3-a8d4-b30b14515a5b/deploy-status)](https://app.netlify.com/projects/modernwebcalculator/deploys)
 <div align="center">
-  <img src="https://raw.githubusercontent.com/fritzkmanurung/advanced-scientific-calculator/main/assets/logo.png" alt="Calculator Logo" width="120">
+  <img src="assets/logo.png" alt="Calculator Logo" width="120">
   <h1>Advanced Scientific Calculator</h1>
   <p>A sleek, modern, and feature-rich scientific calculator built with pure HTML, CSS, and JavaScript.</p>
   
